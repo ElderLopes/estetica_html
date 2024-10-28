@@ -1,0 +1,150 @@
+body {
+    margin-top: 150px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100%;
+
+}
+
+.container {
+    text-align: center;
+}
+
+.carousel-container {
+    background-image: url('../assets/AudiSobre.png'); /* Caminho correto para a imagem de fundo */
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Para adicionar um pouco de espaço em volta */
+    border-radius: 8px;
+}
+.button-container button {
+    margin-top: 30px;
+    background-color: #ee2c09; /* Cor de fundo inicial */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    color: #fff; /* Cor do texto */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor muda para pointer */
+    outline: none; /* Remove o contorno */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra do botão */
+}
+
+.button-container button:hover {
+    background-color: #a14611; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Leve movimento para cima */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Sombra mais forte ao hover */
+}
+
+.button-container button:active {
+    transform: translateY(0); /* Retorna ao normal quando clicado */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra reduzida quando clicado */
+}
+
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    flex: 0 0 20%;
+    margin: 0 15px;
+    padding: 20px;
+    background-color: #2F2F2F; /* Cinza escuro para manter o contraste */
+    border-radius: 8px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+}
+
+.card:hover {
+    background-color: #3A3A3A; /* Cor mais clara ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom, 5% maior */
+}
+
+.card-image {
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    color: #fff;
+}
+
+.carousel-btn {
+    background-color: transparent;
+    /* Cor de fundo do botão */
+    border: none;
+    /* Sem borda */
+    cursor: pointer;
+    /* Cursor muda para pointer */
+    outline: none;
+    /* Remove o contorno */
+    transition: color 0.3s ease;
+    /* Transição suave da cor */
+}
+
+.carousel-btn:hover {
+    color: #ff9900;
+    /* Cor quando o botão é hover */
+}
+
+.carousel-btn i {
+    font-size: 2rem;
+    /* Tamanho dos ícones */
+    color: #fff;
+    /* Cor inicial dos ícones */
+    transition: color 0.3s ease;
+    /* Transição suave da cor dos ícones */
+}
+
+.carousel-btn:hover i {
+    color: #ff9900;
+    /* Cor dos ícones ao passar o mouse */
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}

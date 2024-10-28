@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #0c0c0c; /* Cor de fundo opcional */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 , h2 {
+    color: #ff9900; /* Cor para o título */
+}
+
+h3 , p {
+    color: #fff;
+}
+
+#div-container-training {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;     
+}
+#image-training {
+    margin-top: 20px;
+    border: 1px solid #C0C0C0; /* Prata para combinar com o layout */
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Leve sombra para dar profundidade */
+    overflow: hidden;
+    width: 400px;
+}

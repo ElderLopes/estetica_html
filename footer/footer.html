@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para Font Awesome -->
+    <title>Footer</title>
+</head>
+<body>
+    <footer class="footer-container">
+        <div class="footer-content">
+            <h3>Contato</h3>
+            <p>Email: jotta88detalhamento@gmail.com</p>
+            <p>Telefone: (47) 98808-5196</p>
+            <div class="containerSocialNetwork">
+                <a href="https://www.facebook.com/Jonatanneto09" target="_blank" class="icon-wrapper">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/jotta88detalhamento/" target="_blank" class="icon-wrapper">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/554788085196" target="_blank" class="icon-wrapper">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const phoneNumber = "554788085196";
+
+        function handleLinkClick(url) {
+            window.open(url, "_blank");
+        }
+
+        function handleWhatsAppClick() {
+            window.open(`https://wa.me/${phoneNumber}`, "_blank");
+        }
+    </script>
+</body>
+</html>

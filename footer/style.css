@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #0c0c0c; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+    color: #FFD700; /* Dourado para os títulos no rodapé */
+}
+
+.footer-content p {
+    margin: 5px 0;
+    color: #C0C0C0; /* Prata para o texto */
+}
+
+.containerSocialNetwork {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.icon-wrapper {
+    color: #fff;
+    font-size: 2rem; /* Tamanho dos ícones */
+    transition: color 0.3s;
+}
+
+.icon-wrapper:hover {
+    color: #ff9900; /* Cor ao passar o mouse */
+}

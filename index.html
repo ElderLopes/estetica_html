@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="body">
+
+  <div id="menu">
+    <div id="menu-header"></div>
+    <div id="networking"></div>
+  </div>
+
+  <div id="image-container">
+    <img src="./assets/carSporting.webp" alt="Carro Esportivo JOTTA88">
+</div>
+
+  <div id="carrossel-section">
+    <iframe src="carrocel/carrocel.html" style="width: 100%; height: 100vh; border: none;;"></iframe>
+  </div>
+
+  <div id="service-section">
+    <iframe src="serviços/service.html" style="width: 100%; height: 150vh; border: none;"></iframe>
+  </div>
+
+  <div id="training-section">
+    <iframe src="training/training.html" style="width: 100%; height: 100vh; border: none;"></iframe>
+  </div>
+
+  <div id="location-section">
+    <iframe src="location/location.html" style="width: 100%; height: 172vh; border: none;"></iframe>
+  </div>
+
+  <div id="footer-section">
+    <iframe src="footer/footer.html" style="width: 100%; height: 200px; border: none;"></iframe>
+    <!-- Ajuste a altura conforme necessário -->
+  </div>
+
+  <script>
+    // Carrega o menu
+    fetch('menu_header/menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-header').innerHTML = data;
+      });
+
+    // Carrega a parte de networking
+    fetch('menu_header/networking.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('networking').innerHTML = data;
+      });
+  </script>
+
+</body>
+
+</html>
